@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import ReactPencil from 'react-pencil';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -6,7 +7,7 @@ import './Calender.scss';
 
 export default class MainSection extends Component {
     state = {
-        date: new Date(2018, 6, 1)
+        date: new Date(2020, 5, 20)
     }
     render() {
         
@@ -15,11 +16,17 @@ export default class MainSection extends Component {
      
         return (
            
-            <div className="mainsection">
+<div className="mainsection">
                 <h1>Appointments</h1>
-                {calendar}    
-                    <div >
-                    <table>
+            <div class="container">
+  <div class="row">
+  </div>
+  <div class="row">
+    <div class="col">
+    {calendar}  
+    </div>
+    <div class="col">
+    <table>
                         <tbody>
                             <tr>
                                 <td> <strong>Appointment at: </strong>{info[0].Appointment}</td>
@@ -39,11 +46,11 @@ export default class MainSection extends Component {
                
                         </tbody>
                     </table>
-                    <button className="button">Cancel</button>
-                </div>
-
-            </div>
-       
+                    <br></br><button className="button">Cancel</button>
+    </div>
+  </div>
+</div>
+       </div>
         )
     }
 }
