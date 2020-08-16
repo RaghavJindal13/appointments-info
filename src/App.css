@@ -1,11 +1,26 @@
+@font-face{
+	src: url('./Components/assets/fonts/Gilroy-ExtraBold.ttf');
+	font-family: gilroy-extra-bold;
+}
+
+@font-face{
+	src: url('./Components/assets/fonts/Gilroy-Bold.ttf');
+	font-family: gilroy-bold;
+}
+
+@font-face{
+	src: url('./Components/assets/fonts/Gilroy-RegularItalic.ttf');
+	font-family: gilroy-regular-italic;
+}
 
 *{
   margin: 2px;
   padding: 2px;
+  box-sizing: border-boxs;
+  font-family: gilroy-regular-italic;
 }
 html{
   font-size: 16px;
-  font-family: gilroy-extra-bold;
 }
 body{
   background-color: whitesmoke;
@@ -14,18 +29,19 @@ body{
 
 .container{
   display: grid;
-  grid-template-columns: 0.7fr 4fr;
+  grid-template-columns: 0.2fr 4fr;
   margin: 100px 20px;
 }
 
 .mainsection{
-  width: 90%;
-  padding: 0px 0px 0 30px;
+  width: 100%;
+  padding: 0px 0px 0 20px;
 }
 
 .mainsection h1{
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom:1px solid ;
+  font-family: gilroy-extra-bold;
 }
 
 .box{
@@ -41,10 +57,10 @@ body{
 }
 
 .sidesection{
-  height: 70vh;
+  height: 80vh;
   border-right: 1px solid;
   font-size: 1.4rem;
-  font-family: gilroy-extra-bold;
+  width:250px ;
 }
 
 li{
@@ -52,10 +68,9 @@ li{
 }
 
 table{
-  padding-top: 40px;
-  width: 90%;
-  font-size: 1.4rem;
-  font-family: gilroy-extra-bold;
+  padding-top: 20px;
+  width: 100%;
+  font-size: 1.2rem;
 }
 
 .icon{
@@ -71,17 +86,19 @@ table strong{
   height: 1px;
   min-width: 200px;
   font-family: gilroy-extra-bold;
-
 }
 
 li a{
   text-decoration: none;
   color: black;
+  font-family: gilroy-regular-italic;
 }
 a:focus {
   color: rgb(119,21,114);
 }
 .button{
+  
+  float: right;
   font-size: 1rem;
   font-weight: 700;
   padding:10px 40px;
